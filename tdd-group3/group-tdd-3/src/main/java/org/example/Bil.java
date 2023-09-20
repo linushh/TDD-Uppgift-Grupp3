@@ -36,6 +36,7 @@ public class Bil {
 
     public void setBromsa(boolean broms) {
         if (broms) {
+            setBakLyse(true);
             setHastighet(0);
         }
         this.bromsa = broms;
