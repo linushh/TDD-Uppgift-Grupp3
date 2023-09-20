@@ -19,11 +19,6 @@ jobs:
         java-version: 19
         distribution: 'adopt'
 
-    - name: Make gradlew executable
-      run: chmod +x ./gradlew
-
     - name: Build with Gradle
+      working-directory: group-tdd-3  # Ange arbetskatalogen här
       run: ./gradlew test
-    
-    - name: Verify gradlew file
-      run: ls -l ./gradlew
