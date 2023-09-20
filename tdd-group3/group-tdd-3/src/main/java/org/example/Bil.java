@@ -6,6 +6,7 @@ public class Bil {
     private boolean bakLyse;
     private boolean bilStart;
     private boolean blinkers;
+    private int gas;
     private int hastighet;
 
     public int getHastighet() {
@@ -13,7 +14,24 @@ public class Bil {
     }
 
     public void setHastighet(int hastighet) {
-        this.hastighet = hastighet;
+        if (hastighet > 180) {
+            this.hastighet = 180;
+        }
+    }
+
+    public int getGas() {
+        return gas;
+    }
+
+    public void setGas(int gas) {
+        if (hastighet > 180) {
+            this.gas = 0;
+        }
+        if (gas < 0) {
+            this.gas = 0;
+        } else if (gas > 100) {
+            this.gas = 100;
+        }
     }
 
     public boolean isBlinkers() {
