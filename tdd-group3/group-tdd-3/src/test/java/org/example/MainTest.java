@@ -98,7 +98,7 @@ class MainTest {
     @Test
     void bromsa(){
         Bil bil = new Bil();
-        bil.setBromsa(true);
+        bil.setBromsa(0);
         assertEquals(0, bil.getHastighet());
     }
 }
