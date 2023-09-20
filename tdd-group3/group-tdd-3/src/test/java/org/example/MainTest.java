@@ -164,6 +164,7 @@ class MainTest {
     @Test
     void batteriSlut() {
         Bil bil = new Bil();
+        bil.setBatteri(true);
         bil.setHastighet(140);
         bil.setBatteri(false);
         bil.setHastighet(160);
