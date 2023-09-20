@@ -15,7 +15,10 @@ public class Bil {
         this.lyse = lyse;
     }
 
-    public String lyseOnEllerOf(){
-        return "";
+    public String lyseOnEllerOf() {
+        if (this.lyse) {
+            return "Lyser som satan";
+        }
+        return "Ser inte ett skit";
     }
 }
