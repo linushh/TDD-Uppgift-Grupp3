@@ -16,6 +16,9 @@ public class Bil {
 
     public void setBromsa(boolean bromsa) {
         this.bromsa = bromsa;
+        if (bromsa) {
+            setHastighet(0);
+        }
     }
 
     public int getHastighet() {

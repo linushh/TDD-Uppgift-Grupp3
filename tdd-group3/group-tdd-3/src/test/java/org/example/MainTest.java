@@ -99,6 +99,6 @@ class MainTest {
     void bromsa(){
         Bil bil = new Bil();
         bil.setBromsa(true);
-        assertEquals(0, bil.isBromsa());
+        assertEquals(0, bil.getHastighet());
     }
 }
