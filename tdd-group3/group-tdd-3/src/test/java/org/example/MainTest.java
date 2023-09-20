@@ -103,9 +103,9 @@ class MainTest {
     }
 
     @Test
-    void växel() {
+    void vaxel() {
         Bil bil = new Bil();
-        bil.setVäxel(1);
-        assertEquals("Reverse", bil.getVäxel());
+        bil.setVaxel(0);
+        assertEquals("Reverse", bil.getVaxel());
     }
 }

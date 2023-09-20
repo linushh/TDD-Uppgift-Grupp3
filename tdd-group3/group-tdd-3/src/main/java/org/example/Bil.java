@@ -9,6 +9,26 @@ public class Bil {
     private int gas;
     private int hastighet;
     private boolean bromsa;
+    private int vaxel;
+
+    public void setVaxel(int val) {
+        if (val == 1) {
+            this.vaxel = val;
+        } else if (val == 0) {
+            this.vaxel = val;
+        } else {
+            this.vaxel = 0;
+        }
+    }
+
+    public String getVaxel() {
+        if (vaxel == 1) {
+            return "Drive";
+        } else if (vaxel == 0) {
+            return "Reverse";
+        }
+        return null;
+    }
 
     public boolean isBromsa() {
         return bromsa;
