@@ -11,4 +11,11 @@ class MainTest {
         assertNotNull(bil);
 
     }
+
+    @Test
+    void lyse(){
+        Bil bil = new Bil();
+        assertTrue(bil.lysePå());
+        assertFalse(bil.lysePå());
+    }
 }
