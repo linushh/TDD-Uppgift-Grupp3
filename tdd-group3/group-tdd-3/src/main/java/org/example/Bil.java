@@ -19,6 +19,12 @@ public class Bil {
 
     public void setBatteri(boolean bat) {
         this.batteri = bat;
+        if (!bat) {
+            setLyse(false);
+            setHalvLyse(false);
+            setBakLyse(false);
+            setBlinkers(false);
+        }
     }
 
     public boolean getBatteri() {
