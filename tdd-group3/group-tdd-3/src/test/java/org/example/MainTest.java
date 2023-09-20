@@ -70,4 +70,14 @@ class MainTest {
         assertTrue(bil.isLyse());
     }
 
+    @Test
+    void varningsBlinkers(){
+        Bil bil = new Bil();
+        bil.setBilStart(false);
+        bil.setBlinkers(true);
+        assertTrue(bil.isBlinkers());
+        bil.setBilStart(false);
+        bil.setBlinkers(true);
+        assertTrue(bil.isBlinkers());
+    }
 }

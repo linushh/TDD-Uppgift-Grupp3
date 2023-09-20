@@ -5,7 +5,15 @@ public class Bil {
     private boolean halvLyse;
     private boolean bakLyse;
     private boolean bilStart;
+    private boolean blinkers;
 
+    public boolean isBlinkers() {
+        return blinkers;
+    }
+
+    public void setBlinkers(boolean blinkers) {
+        this.blinkers = blinkers;
+    }
 
     public boolean isLyse() {
         return lyse;
