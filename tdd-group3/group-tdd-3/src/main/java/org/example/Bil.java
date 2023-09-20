@@ -63,6 +63,10 @@ public class Bil {
     public void setHastighet(int hastighet) {
         if (hastighet > 180) {
             this.hastighet = 180;
+        } else if (hastighet < 0) {
+            this.hastighet = 0;
+        } else {
+            this.hastighet = hastighet;
         }
     }
 
