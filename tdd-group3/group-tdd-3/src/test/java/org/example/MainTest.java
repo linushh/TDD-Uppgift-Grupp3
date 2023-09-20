@@ -55,4 +55,19 @@ class MainTest {
         assertFalse(bil.isBilStart());
     }
 
+    @Test
+    void avStendBild(){
+        Bil bil = new Bil();
+        bil.setBilStart(false);
+        bil.kontrolleraLysen();
+        assertFalse(bil.isBakLyse());
+        assertFalse(bil.isHalvLyse());
+        assertFalse(bil.isLyse());
+        bil.setBilStart(true);
+        bil.kontrolleraLysen();
+        assertFalse(bil.isBakLyse());
+        assertTrue(bil.isHalvLyse());
+        assertTrue(bil.isLyse());
+    }
+
 }

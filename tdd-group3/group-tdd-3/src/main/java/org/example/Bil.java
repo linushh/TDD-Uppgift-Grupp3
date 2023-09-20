@@ -7,7 +7,6 @@ public class Bil {
     private boolean bilStart;
 
 
-
     public boolean isLyse() {
         return lyse;
     }
@@ -45,5 +44,20 @@ public class Bil {
 
     public void setBilStart(boolean bilStart) {
         this.bilStart = bilStart;
+    }
+
+    public void kontrolleraLysen() {
+        if (bilStart == false) {
+            setBakLyse(false);
+            setLyse(false);
+            setHalvLyse(false);
+        }
+
+        if (bilStart == true) {
+            setLyse(true);
+            setHalvLyse(true);
+        } else {
+            System.out.println("Bilen är igång");
+        }
     }
 }
