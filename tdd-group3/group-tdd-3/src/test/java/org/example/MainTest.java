@@ -160,4 +160,12 @@ class MainTest {
         bil.setBlinkers(false);
         assertFalse(bil.getDrain());
     }
+
+    @Test
+    void batteriSlut() {
+        Bil bil = new Bil();
+        bil.setBatteri(false);
+        bil.setHastighet(160);
+        assertEquals(140, bil.getHastighet());
+    }
 }
