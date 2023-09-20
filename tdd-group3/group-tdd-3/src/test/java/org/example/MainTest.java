@@ -19,4 +19,12 @@ class MainTest {
         bil.setLyse(false);
         assertFalse(bil.isLyse());
     }
+
+    @Test
+    void testaLyse(){
+        Bil bil = new Bil(true);
+        assertEquals("Lyser som satan", bil.lyseOnEllerOf());
+        bil.setLyse(false);
+        assertNotEquals("Lyser som satan", bil.lyseOnEllerOf());
+    }
 }
