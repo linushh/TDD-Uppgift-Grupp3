@@ -46,4 +46,11 @@ class MainTest {
         assertTrue(bil.isBakLyse());
     }
 
+    @Test
+    void startaBil(){
+        Bil bil = new Bil();
+        assertTrue(bil.isBilStart());
+        assertFalse(bil.isBilStart());
+    }
+
 }

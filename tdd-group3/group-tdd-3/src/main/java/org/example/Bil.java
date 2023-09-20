@@ -4,6 +4,7 @@ public class Bil {
     private boolean lyse;
     private boolean halvLyse;
     private boolean bakLyse;
+    private boolean bilStart;
 
 
 
@@ -36,5 +37,13 @@ public class Bil {
 
     public void setBakLyse(boolean bakLyse) {
         this.bakLyse = bakLyse;
+    }
+
+    public boolean isBilStart() {
+        return bilStart;
+    }
+
+    public void setBilStart(boolean bilStart) {
+        this.bilStart = bilStart;
     }
 }
