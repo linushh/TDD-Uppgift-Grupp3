@@ -7,15 +7,16 @@ import static org.junit.jupiter.api.Assertions.*;
 class MainTest {
     @Test
     void testBil(){
-        Bil bil = new Bil();
+        Bil bil = new Bil(false);
         assertNotNull(bil);
 
     }
 
     @Test
     void lyse(){
-        Bil bil = new Bil();
-        assertTrue(bil.lysePå());
-        assertFalse(bil.lysePå());
+        Bil bil = new Bil(true);
+        assertTrue(bil.isLyse());
+        bil.setLyse(false);
+        assertFalse(bil.isLyse());
     }
 }
