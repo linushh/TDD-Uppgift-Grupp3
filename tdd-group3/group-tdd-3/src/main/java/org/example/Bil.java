@@ -23,7 +23,6 @@ public class Bil {
             setLyse(false);
             setHalvLyse(false);
             setBakLyse(false);
-            setBlinkers(false);
         }
     }
 
