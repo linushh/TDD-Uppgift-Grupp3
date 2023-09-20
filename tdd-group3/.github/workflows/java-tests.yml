@@ -20,4 +20,5 @@ jobs:
         distribution: 'adopt'
 
     - name: Build with Gradle
+      working-directory: C:\Users\linus\OneDrive\Skrivbord\Java Nacka\Projekt skolan\tddgroup\TDD-Uppgift-Grupp3\tdd-group3\group-tdd-3
       run: ./gradlew test
