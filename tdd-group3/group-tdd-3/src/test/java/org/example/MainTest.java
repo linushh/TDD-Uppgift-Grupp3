@@ -190,4 +190,13 @@ class MainTest {
         bil.setBatteri(false);
         assertTrue(bil.isBlinkers());
     }
+
+    @Test
+    void laddaBatteri() {
+        Bil bil = new Bil();
+        bil.setBatteri(false);
+        assertFalse(bil.getBatteri());
+        bil.setBatteri(true);
+        assertTrue(bil.getBatteri());
+    }
 }
