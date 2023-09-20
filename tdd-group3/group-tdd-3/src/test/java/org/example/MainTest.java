@@ -181,4 +181,13 @@ class MainTest {
         assertFalse(bil.isBakLyse());
         assertFalse(bil.isBlinkers());
     }
+
+    @Test
+    void varningsBlinkersBatteri() {
+        Bil bil = new Bil();
+        bil.setBlinkers(true);
+        assertTrue(bil.isBlinkers());
+        bil.setBatteri(false);
+        assertTrue(bil.isBlinkers());
+    }
 }
