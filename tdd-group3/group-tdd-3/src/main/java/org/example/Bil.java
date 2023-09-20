@@ -8,6 +8,15 @@ public class Bil {
     private boolean blinkers;
     private int gas;
     private int hastighet;
+    private boolean bromsa;
+
+    public boolean isBromsa() {
+        return bromsa;
+    }
+
+    public void setBromsa(boolean bromsa) {
+        this.bromsa = bromsa;
+    }
 
     public int getHastighet() {
         return hastighet;
