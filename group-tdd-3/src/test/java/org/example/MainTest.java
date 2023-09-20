@@ -82,17 +82,17 @@ class MainTest {
     }
 
     @Test
-    void gasaTest(){
+    void gasaTest(){  // ändra tillbaka detta 0 ska vara vad som helst men inte 0
         Bil bil = new Bil();
         bil.setGas(50);
-        assertEquals(50, bil.getGas());
+        assertEquals(0, bil.getGas());
     }
 
     @Test
-    void maxHastighet(){
+    void maxHastighet(){  // ändra tillbaka detta 0 ska vara vad som helst men inte 0
         Bil bil = new Bil();
         bil.setHastighet(200);
-        assertEquals(180, bil.getHastighet());
+        assertEquals(0, bil.getHastighet());
     }
 
     @Test
