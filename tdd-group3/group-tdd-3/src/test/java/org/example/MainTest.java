@@ -30,8 +30,9 @@ class MainTest {
 
     @Test void helOrHalv(){
         Bil bil = new Bil(true);
+        bil.setHalvLyse(true);
         assertTrue(bil.isHalvLyse());
-        bil.setLyse(false);
+        bil.setHalvLyse(false);
         assertFalse(bil.isHalvLyse());
     }
 }
