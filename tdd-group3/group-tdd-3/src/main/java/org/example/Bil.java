@@ -3,10 +3,9 @@ package org.example;
 public class Bil {
     private boolean lyse;
     private boolean halvLyse;
+    private boolean bakLyse;
 
-    public Bil(boolean lyse) {
-        this.lyse = lyse;
-    }
+
 
     public boolean isLyse() {
         return lyse;
@@ -29,5 +28,13 @@ public class Bil {
 
     public void setHalvLyse(boolean halvLyse) {
         this.halvLyse = halvLyse;
+    }
+
+    public boolean isBakLyse() {
+        return bakLyse;
+    }
+
+    public void setBakLyse(boolean bakLyse) {
+        this.bakLyse = bakLyse;
     }
 }
