@@ -170,4 +170,15 @@ class MainTest {
         bil.setHastighet(160);
         assertEquals(140, bil.getHastighet());
     }
+
+    @Test
+    void batteriSlutLampor() {
+        Bil bil = new Bil();
+        bil.setBilStart(true);
+        bil.setBatteri(false);
+        assertFalse(bil.isLyse());
+        assertFalse(bil.isHalvLyse());
+        assertFalse(bil.isBakLyse());
+        assertFalse(bil.isBlinkers());
+    }
 }
