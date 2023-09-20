@@ -123,4 +123,10 @@ class MainTest {
         bil.setBromsa(true);
         assertEquals(0, bil.getHastighet());
     }
+
+    @Test
+    void harBatteri() {
+        Bil bil = new Bil();
+        assertNotNull(bil.getBatteri());
+    }
 }
