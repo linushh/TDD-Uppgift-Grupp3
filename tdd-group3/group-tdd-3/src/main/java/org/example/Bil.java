@@ -87,6 +87,7 @@ public class Bil {
 
     public void setBlinkers(boolean blinkers) {
         this.blinkers = blinkers;
+        this.batteriDrain = blinkers;
     }
 
     public boolean isLyse() {
@@ -95,6 +96,7 @@ public class Bil {
 
     public void setLyse(boolean lyse) {
         this.lyse = lyse;
+        this.batteriDrain = lyse;
     }
 
     public String lyseOnEllerOf() {
@@ -110,6 +112,7 @@ public class Bil {
 
     public void setHalvLyse(boolean halvLyse) {
         this.halvLyse = halvLyse;
+        this.batteriDrain = halvLyse;
     }
 
     public boolean isBakLyse() {
@@ -118,6 +121,7 @@ public class Bil {
 
     public void setBakLyse(boolean bakLyse) {
         this.bakLyse = bakLyse;
+        this.batteriDrain = bakLyse;
     }
 
     public boolean isBilStart() {

@@ -136,4 +136,28 @@ class MainTest {
         bil.setBilStart(true);
         assertTrue(bil.getDrain());
     }
+
+    @Test
+    void lamporBatteri() {
+        Bil bil = new Bil();
+        bil.setLyse(true);
+        assertTrue(bil.getDrain());
+        bil.setLyse(false);
+        assertFalse(bil.getDrain());
+
+        bil.setHalvLyse(true);
+        assertTrue(bil.getDrain());
+        bil.setHalvLyse(false);
+        assertFalse(bil.getDrain());
+
+        bil.setBakLyse(true);
+        assertTrue(bil.getDrain());
+        bil.setBakLyse(false);
+        assertFalse(bil.getDrain());
+
+        bil.setBlinkers(true);
+        assertTrue(bil.getDrain());
+        bil.setBlinkers(false);
+        assertFalse(bil.getDrain());
+    }
 }
