@@ -129,4 +129,11 @@ class MainTest {
         Bil bil = new Bil();
         assertNotNull(bil.getBatteri());
     }
+
+    @Test
+    void batteriDras() {
+        Bil bil = new Bil();
+        bil.setBilStart(true);
+        assertTrue(bil.getDrain());
+    }
 }
