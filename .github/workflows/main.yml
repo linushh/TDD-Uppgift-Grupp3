@@ -24,3 +24,6 @@ jobs:
 
     - name: Build with Gradle
       run: ./gradlew test
+    
+    - name: Verify gradlew file
+      run: ls -l ./gradlew
