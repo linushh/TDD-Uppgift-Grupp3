@@ -40,7 +40,9 @@ class MainTest {
 
     @Test void bakLyseTest(){
         Bil bil = new Bil();
+        bil.setBakLyse(false);
         assertFalse(bil.isBakLyse());
+        bil.setBakLyse(true);
         assertTrue(bil.isBakLyse());
     }
 
