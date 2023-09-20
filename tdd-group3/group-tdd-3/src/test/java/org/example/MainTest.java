@@ -115,4 +115,12 @@ class MainTest {
         bil.setBromsa(true);
         assertTrue(bil.isBakLyse());
     }
+
+    @Test
+    void bakBroms() {
+        Bil bil = new Bil();
+        bil.setVaxel(0);
+        bil.setBromsa(true);
+        assertEquals(0, bil.getHastighet());
+    }
 }
