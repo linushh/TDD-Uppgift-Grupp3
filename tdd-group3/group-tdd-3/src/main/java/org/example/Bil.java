@@ -2,6 +2,7 @@ package org.example;
 
 public class Bil {
     private boolean lyse;
+    private boolean halvLyse;
 
     public Bil(boolean lyse) {
         this.lyse = lyse;
@@ -20,5 +21,13 @@ public class Bil {
             return "Lyser som satan";
         }
         return "Ser inte ett skit";
+    }
+
+    public boolean isHalvLyse() {
+        return this.halvLyse;
+    }
+
+    public void setHalvLyse(boolean halvLyse) {
+        this.halvLyse = halvLyse;
     }
 }

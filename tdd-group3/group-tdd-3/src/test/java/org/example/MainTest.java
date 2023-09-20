@@ -27,4 +27,11 @@ class MainTest {
         bil.setLyse(false);
         assertNotEquals("Lyser som satan", bil.lyseOnEllerOf());
     }
+
+    @Test void helOrHalv(){
+        Bil bil = new Bil(true);
+        assertTrue(bil.isHalvLyse());
+        bil.setLyse(false);
+        assertFalse(bil.isHalvLyse());
+    }
 }
