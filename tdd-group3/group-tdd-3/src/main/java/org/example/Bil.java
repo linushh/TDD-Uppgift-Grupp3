@@ -11,6 +11,11 @@ public class Bil {
     private boolean bromsa;
     private int vaxel;
     private boolean batteri;
+    private boolean batteriDrain;
+
+    public boolean getDrain() {
+        return batteriDrain;
+    }
 
     public void setBatteri(boolean bat) {
         this.batteri = bat;
@@ -121,6 +126,7 @@ public class Bil {
 
     public void setBilStart(boolean bilStart) {
         this.bilStart = bilStart;
+        this.batteriDrain = bilStart;
     }
 
     public void kontrolleraLysen() {
