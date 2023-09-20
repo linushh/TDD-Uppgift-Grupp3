@@ -14,14 +14,11 @@ public class Bil {
         return bromsa;
     }
 
-    public void setBromsa(int bromsa) {
-        if (bromsa == 0) {
+    public void setBromsa(boolean broms) {
+        if (broms) {
             setHastighet(0);
-            this.bromsa = true;
-        } else if (bromsa > 0){
-            System.out.println("bilen backar");
-            this.bromsa = false;
         }
+        this.bromsa = broms;
     }
 
     public int getHastighet() {
