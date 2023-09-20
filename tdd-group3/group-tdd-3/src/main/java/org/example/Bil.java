@@ -6,6 +6,15 @@ public class Bil {
     private boolean bakLyse;
     private boolean bilStart;
     private boolean blinkers;
+    private int hastighet;
+
+    public int getHastighet() {
+        return hastighet;
+    }
+
+    public void setHastighet(int hastighet) {
+        this.hastighet = hastighet;
+    }
 
     public boolean isBlinkers() {
         return blinkers;

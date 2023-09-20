@@ -85,6 +85,6 @@ class MainTest {
     void okaTakten(){
         Bil bil = new Bil();
         bil.setHastighet(50);
-        assertEquals(50, bil.isHastighet());
+        assertEquals(50, bil.getHastighet());
     }
 }
