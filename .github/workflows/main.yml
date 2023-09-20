@@ -21,7 +21,6 @@ jobs:
 
     - name: Set up Gradle
       run: |
-        # chmod +x group-tdd-3/gradlew
         cd group-tdd-3
 
     - name: Run Gradle Test
