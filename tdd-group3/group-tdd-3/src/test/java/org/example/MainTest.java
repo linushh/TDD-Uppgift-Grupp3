@@ -108,4 +108,11 @@ class MainTest {
         bil.setVaxel(0);
         assertEquals("Reverse", bil.getVaxel());
     }
+
+    @Test
+    void bromsljus() {
+        Bil bil = new Bil();
+        bil.setBromsa(true);
+        assertTrue(bil.isBakLyse());
+    }
 }
