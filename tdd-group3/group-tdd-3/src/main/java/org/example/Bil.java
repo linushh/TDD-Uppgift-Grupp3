@@ -10,6 +10,15 @@ public class Bil {
     private int hastighet;
     private boolean bromsa;
     private int vaxel;
+    private boolean batteri;
+
+    public void setBatteri(boolean bat) {
+        this.batteri = bat;
+    }
+
+    public boolean getBatteri() {
+        return batteri;
+    }
 
     public void setVaxel(int val) {
         if (val == 1) {
