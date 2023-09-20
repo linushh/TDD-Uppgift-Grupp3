@@ -49,7 +49,9 @@ class MainTest {
     @Test
     void startaBil(){
         Bil bil = new Bil();
+        bil.setBilStart(true);
         assertTrue(bil.isBilStart());
+        bil.setBilStart(false);
         assertFalse(bil.isBilStart());
     }
 
