@@ -22,7 +22,7 @@ jobs:
     - name: Build with Gradle
       run: |
         # Gå till rätt katalog där gradlew finns
-        cd tdd-group3/group-tdd-3
+        cd group-tdd-3
 
         # Kör gradlew test
         ./gradlew test

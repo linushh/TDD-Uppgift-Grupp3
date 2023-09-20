@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.example.MainTest" tests="21" skipped="0" failures="2" errors="0" timestamp="2023-09-20T17:10:16" hostname="DESKTOP-6SD0UPD" time="0.048">
+<testsuite name="org.example.MainTest" tests="21" skipped="0" failures="2" errors="0" timestamp="2023-09-20T17:35:02" hostname="DESKTOP-6SD0UPD" time="0.049">
   <properties/>
-  <testcase name="startaBil()" classname="org.example.MainTest" time="0.014"/>
+  <testcase name="startaBil()" classname="org.example.MainTest" time="0.015"/>
   <testcase name="bakBroms()" classname="org.example.MainTest" time="0.0"/>
   <testcase name="gasaTest()" classname="org.example.MainTest" time="0.004">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;50&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;50&gt; but was: &lt;0&gt;
@@ -98,11 +98,11 @@
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="lamporBatteri()" classname="org.example.MainTest" time="0.0"/>
+  <testcase name="lamporBatteri()" classname="org.example.MainTest" time="0.001"/>
   <testcase name="testBil()" classname="org.example.MainTest" time="0.0"/>
   <testcase name="laddaBatteri()" classname="org.example.MainTest" time="0.001"/>
   <testcase name="bromsa()" classname="org.example.MainTest" time="0.001"/>
-  <testcase name="bromsljus()" classname="org.example.MainTest" time="0.0"/>
+  <testcase name="bromsljus()" classname="org.example.MainTest" time="0.001"/>
   <testcase name="testaLyse()" classname="org.example.MainTest" time="0.002"/>
   <testcase name="batteriSlutLampor()" classname="org.example.MainTest" time="0.001"/>
   <testcase name="avStendBild()" classname="org.example.MainTest" time="0.001"/>
@@ -201,11 +201,11 @@
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="varningsBlinkers()" classname="org.example.MainTest" time="0.0"/>
-  <testcase name="harBatteri()" classname="org.example.MainTest" time="0.0"/>
-  <testcase name="lyse()" classname="org.example.MainTest" time="0.001"/>
-  <testcase name="vaxel()" classname="org.example.MainTest" time="0.001"/>
-  <testcase name="helOrHalv()" classname="org.example.MainTest" time="0.0"/>
+  <testcase name="varningsBlinkers()" classname="org.example.MainTest" time="0.001"/>
+  <testcase name="harBatteri()" classname="org.example.MainTest" time="0.001"/>
+  <testcase name="lyse()" classname="org.example.MainTest" time="0.0"/>
+  <testcase name="vaxel()" classname="org.example.MainTest" time="0.0"/>
+  <testcase name="helOrHalv()" classname="org.example.MainTest" time="0.002"/>
   <testcase name="varningsBlinkersBatteri()" classname="org.example.MainTest" time="0.0"/>
   <testcase name="bakLyseTest()" classname="org.example.MainTest" time="0.0"/>
   <testcase name="batteriDras()" classname="org.example.MainTest" time="0.0"/>
