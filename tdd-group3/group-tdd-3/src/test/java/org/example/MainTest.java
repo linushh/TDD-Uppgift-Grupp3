@@ -80,4 +80,11 @@ class MainTest {
         bil.setBlinkers(true);
         assertTrue(bil.isBlinkers());
     }
+
+    @Test
+    void okaTakten(){
+        Bil bil = new Bil();
+        bil.setHastighet(50);
+        assertEquals(50, bil.isHastighet());
+    }
 }
