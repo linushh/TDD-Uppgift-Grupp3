@@ -101,4 +101,11 @@ class MainTest {
         bil.setBromsa(true);
         assertEquals(0, bil.getHastighet());
     }
+
+    @Test
+    void växel() {
+        Bil bil = new Bil();
+        bil.setVäxel(1);
+        assertEquals("Reverse", bil.getVäxel());
+    }
 }
