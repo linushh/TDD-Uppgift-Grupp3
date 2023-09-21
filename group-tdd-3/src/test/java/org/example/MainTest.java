@@ -89,10 +89,11 @@ class MainTest {
     }
 
     @Test
-    void maxHastighet(){  // ändra tillbaka detta 0 ska vara vad som helst men inte 0
+    void maxHastighet(){
         Bil bil = new Bil();
+        bil.setBatteri(true);
         bil.setHastighet(200);
-        assertEquals(0, bil.getHastighet());
+        assertEquals(180, bil.getHastighet());
     }
 
     @Test
