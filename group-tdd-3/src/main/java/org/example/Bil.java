@@ -81,14 +81,15 @@ public class Bil {
         return gas;
     }
 
-    public void setGas(int gas) {
+    public void setGas(int gasInp) {
         if (hastighet > 180) {
             this.gas = 0;
-        }
-        if (gas < 0) {
+        } else if (gasInp < 0) {
             this.gas = 0;
-        } else if (gas > 100) {
+        } else if (gasInp > 100) {
             this.gas = 100;
+        } else {
+            this.gas = gasInp;
         }
     }
 
