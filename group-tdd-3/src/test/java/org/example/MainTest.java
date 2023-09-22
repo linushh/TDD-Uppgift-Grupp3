@@ -85,7 +85,7 @@ class MainTest {
     void gasaTest(){  // ändra tillbaka detta 0 ska vara vad som helst men inte 0
         Bil bil = new Bil();
         bil.setGas(50);
-        assertEquals(0, bil.getGas());
+        assertEquals(50, bil.getGas());
     }
 
     @Test
